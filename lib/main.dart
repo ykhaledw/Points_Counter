@@ -6,7 +6,7 @@ void main() {
 }
 
 class PointsCounter extends StatefulWidget {
-  PointsCounter({super.key});
+  const PointsCounter({super.key});
 
   @override
   State<PointsCounter> createState() => _PointsCounterState();
@@ -35,7 +35,7 @@ class _PointsCounterState extends State<PointsCounter> {
                 children: [
                   Column(
                     children: [
-                      Text(
+                     const Text(
                         'Team A',
                         style: TextStyle(
                             fontSize: 40, fontWeight: FontWeight.bold),
@@ -69,7 +69,7 @@ class _PointsCounterState extends State<PointsCounter> {
                           }),
                     ],
                   ),
-                  VerticalDivider(
+                  const VerticalDivider(
                     color: Colors.black,
                     thickness: 1,
                     width: 10,
@@ -78,7 +78,7 @@ class _PointsCounterState extends State<PointsCounter> {
                   ),
                   Column(
                     children: [
-                      Text(
+                     const Text(
                         'Team B',
                         style: TextStyle(
                             fontSize: 40, fontWeight: FontWeight.bold),
@@ -128,7 +128,7 @@ class _PointsCounterState extends State<PointsCounter> {
                         color: Colors.yellow),
                     width: 150,
                     height: 50,
-                    child: Center(
+                    child: const Center(
                         child: Text('Reset',
                             style: TextStyle(
                                 color: Colors.black,

@@ -1,14 +1,12 @@
 //import 'dart:ffi';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class TextButtons extends StatelessWidget {
-  TextButtons({required this.numberOfPoints, required this.onPressedButton});
+ const TextButtons({super.key, required this.numberOfPoints, required this.onPressedButton});
 
-  String? numberOfPoints;
-  VoidCallback? onPressedButton;
+  final String? numberOfPoints;
+  final VoidCallback? onPressedButton;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +23,7 @@ class TextButtons extends StatelessWidget {
           onPressed: onPressedButton,
           child: Text(
             numberOfPoints!,
-            style: TextStyle(color: Colors.black),
+            style: const TextStyle(color: Colors.black),
           ),
         ),
       ),
